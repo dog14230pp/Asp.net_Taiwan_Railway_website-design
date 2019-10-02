@@ -1,0 +1,124 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            text-align: left;
+        }
+        .auto-style6 {
+            font-size: 40px;
+            background-color: #FFFFFF;
+        }
+        .auto-style9 {
+            background-color: #FFFFFF;
+        }
+        .auto-style10 {
+            font-size: 36px;
+            font-family: 標楷體;
+            font-weight: bold;
+            font-style: normal;
+            color: #000000;
+            width: 650px;
+            height: 196px;
+            border-left-style: hidden;
+            border-left-color: #FF6600;
+            border-right-style: hidden;
+            border-right-color: #FF6600;
+            border-top-style: ridge;
+            border-top-color: #FF6600;
+            border-bottom-style: ridge;
+            border-bottom-color: #FF6600;
+        }
+        .auto-style11 {
+            text-align: left;
+            height: 196px;
+        }
+        .auto-style12 {
+            font-size: 36px;
+            font-family: 標楷體;
+            font-weight: bold;
+            font-style: normal;
+            color: #000000;
+            height: 196px;
+            border-left-style: hidden;
+            border-left-color: #FF6600;
+            border-right-style: hidden;
+            border-right-color: #FF6600;
+            border-top-style: ridge;
+            border-top-color: #FF6600;
+            border-bottom-style: ridge;
+            border-bottom-color: #FF6600;
+        }
+        </style>
+    <link href="StyleSheet3.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style5" colspan="2">
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style6">
+                                <asp:Image ID="Image1" runat="server" Height="145px" ImageUrl="~/images/台鐵.png" Width="154px" />
+                            </td>
+                            <td class="auto-style10"><span class="auto-style6">網路訂票系統</span><span class="auto-style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
+                                <br class="auto-style9" />
+                                <span class="auto-style9">&nbsp;&nbsp;&nbsp; Internet Ticketing</span>&nbsp;&nbsp; </td>
+                            <td class="auto-style12">
+                                <asp:Image ID="Image2" runat="server" ImageUrl="~/images/for_booking1.jpg" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <asp:Button ID="Button1" runat="server" Text="訂單程票" Width="150px" />
+                    <br />
+                    <asp:Button ID="Button2" runat="server" Text="查詢訂票紀錄" Width="150px" />
+                    <br />
+                    <asp:Button ID="Button3" runat="server" Text="時刻查詢" Width="150px" />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
