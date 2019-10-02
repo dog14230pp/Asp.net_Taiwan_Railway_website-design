@@ -1,0 +1,69 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage2.master.vb" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 224px;
+        }
+        .try2 {
+            font-family: 標楷體;
+            font-size: 50px;
+            border-top-style: ridge;
+            border-bottom-style: ridge;
+            border-width: medium;
+            border-color: #FF6600;
+            color: #0000FF;
+        }
+        .try3 {
+            border-color: #FF0000;
+            border-style: ridge;
+            background-color: #FFFF00;
+        }
+        .try4 {
+            border-color: #FF0000;
+            border-style: ridge;
+        }
+    </style>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/台鐵.png" Width="208px" />
+                </td>
+                <td class="try2">列車時刻查詢系統<br />
+&nbsp;&nbsp; Train Timetable Information</td>
+            </tr>
+            <tr>
+                <td class="try3">
+                    &nbsp;&nbsp;<br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" Text="快速查詢" Width="150px" />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button3" runat="server" Text="網路訂票" Width="150px" />
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
